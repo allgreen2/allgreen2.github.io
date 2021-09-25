@@ -1368,16 +1368,15 @@ a:focus {
 .single {
     position: relative;
     padding: 45px 0;
+    background: #030f27;
 }
 
 .single .single-content {
     position: relative;
-    margin-bottom: 30px;
     overflow: hidden;
 }
 
 .single .single-content img {
-    margin-bottom: 20px;
     width: 100%;
 }
 
