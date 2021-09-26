@@ -2107,6 +2107,7 @@ a:focus {
     margin-bottom: 10px;
     color: #ffffff;
     transition: .3s;
+    font-size: 14px;
 }
 
 .footer .footer-link a::before {
@@ -2128,6 +2129,7 @@ a:focus {
 
 .footer .footer-contact a {
     color: #ffffff;
+    font-size: 14px;
 }
 
 .footer .footer-contact a:hover{
@@ -2232,6 +2234,7 @@ a:focus {
 .footer .copyright p {
     margin: 0;
     color: #ffffff;
+    font-size: 14px;
 }
 
 .footer .copyright .col-md-6:last-child p {
@@ -2289,6 +2292,22 @@ a:focus {
 }
 .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
   line-height: inherit;
+}
+
+.timeline-item h3 {
+    font-size: 18px;
+}
+
+.timeline-item p {
+    font-size: 14px;
+}
+
+.timeline-item span {
+    font-size: 16px;
+}
+
+.timeline-item h2 {
+    font-size: 30px;
 }
 
 /*----- TIMELINE ITEM -----*/
