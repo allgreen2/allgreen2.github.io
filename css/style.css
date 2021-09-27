@@ -624,6 +624,7 @@ a:focus {
 .about .about-text a.btn {
     position: relative;
     margin-top: 15px;
+    min-width: 250px;
     padding: 15px 35px;
     font-size: 16px;
     font-weight: 500;
@@ -644,6 +645,49 @@ a:focus {
         margin-bottom: 30px;
         height: auto;
     }
+}
+
+.admissions-steps {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.admissions-steps p {
+    font-size: 16px;
+}
+
+.admissions-steps a.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 35px;
+    min-width: 250px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #789bb3;
+    border-radius: 0;
+    background: #030f27;
+    transition: .3s;
+}
+
+.admissions-steps a.btn:hover {
+    color: #030f27;
+    background: #789bb3;
+}
+
+
+.payment-selector {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    min-width: 300px;
+    border: none;
+}
+
+.payment-container {
+    max-width: 400px;
+    margin: auto;
 }
 
 
