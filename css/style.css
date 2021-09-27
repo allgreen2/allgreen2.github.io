@@ -602,9 +602,26 @@ a:focus {
     padding: 45px 0;
 }
 
+.about .container {
+    margin-top: 100px;
+}
+
+.container-fluid .container {
+    margin-top: 115px;
+}
+
+.faqs .container {
+    margin-top: 100px;
+}
+
 .about .section-header {
     margin-bottom: 30px;
 }
+
+.pay .section-header{
+    margin-top: 100px;
+}
+
 
 .about .about-img {
     position: relative;
