@@ -2369,6 +2369,7 @@ a:focus {
 
 .timeline-item span {
     font-size: 16px;
+    line-height: 15pt;
 }
 
 .timeline-item h2 {
