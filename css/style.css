@@ -1164,6 +1164,11 @@ a:focus {
   padding: 10px;
 }
 
+.faqs .card p {
+    display: block;
+    font-size: 16px;
+}
+
 .faqs .card-header a {
     display: block;
     padding: 10px 25px;
