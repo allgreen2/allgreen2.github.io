@@ -678,6 +678,10 @@ a:focus {
     font-size: 16px;
 }
 
+.admissions-steps li {
+    font-size: 16px;
+}
+
 .admissions-steps a.btn {
     position: relative;
     margin-top: 15px;
