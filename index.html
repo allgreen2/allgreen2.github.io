@@ -792,117 +792,121 @@
                                 <h2>Payments</h2>
                         </div>
                         <div class="admissions-steps">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                            <!-- Paypal Start -->
-                            <div class="container">
-                                <div class="payment-container" id="smart-button-container">
-                                      <div style="text-align: center;">
-                                        <div style="margin-bottom: 1.25rem;">
-                                          <p></p>
-                                          <select class="payment-selector" id="item-options"><option value="Application Fee" price="100">Application Fee - $100 USD</option><option value="Tuition Deposit" price="1500">Tuition Deposit - $1,500 USD</option></select>
-                                          <select style="visibility: hidden" id="quantitySelect"></select>
+                            <p>You may use either of the methods below to submit payment for the application fee or tuition. To pay with Venmo, simply scan the QR code below. <b>To pay via check, email <a href="mailto:allgreen.med@gmail.com">allgreen.med@gmail.com</a> for instructions.</b><br><br></p>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="img/venmo.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="payment-container" id="smart-button-container">
+                                    <div style="text-align: center;">
+                                            <div style="margin-bottom: 1.25rem;">
+                                              <p></p>
+                                              <select class="payment-selector" id="item-options"><option value="Application Fee" price="100">Application Fee - $100 USD</option><option value="Tuition Deposit" price="1500">Tuition Deposit - $1,500 USD</option><option value="Tuition Remainder" price="1200">Tuition Remainder - $1,200 USD</option><option value="1/2 Annual Tuition " price="2700">1/2 Annual Tuition  - $2,700 USD</option><option value="Full Annual Tuition" price="5400">Full Annual Tuition - $5,400 USD</option></select>
+                                              <select style="visibility: hidden" id="quantitySelect"></select>
+                                            </div>
+                                          <div id="paypal-button-container"></div>
+                                          </div>
                                         </div>
-                                      <div id="paypal-button-container"></div>
-                                      </div>
-                                    </div>
-                                    <script src="https://www.paypal.com/sdk/js?client-id=AbkkQh08QjkVkjErSW-rEgF93qpyEksU_XHLIKNrnCCmexl_An_9naHeBZxYRtkbBcpB5S87gO-JnGJo&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-                                    <script>
-                                      function initPayPalButton() {
-                                        var shipping = 0;
-                                        var itemOptions = document.querySelector("#smart-button-container #item-options");
-                                    var quantity = parseInt();
-                                    var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
-                                    if (!isNaN(quantity)) {
-                                      quantitySelect.style.visibility = "visible";
-                                    }
-                                    var orderDescription = '';
-                                    if(orderDescription === '') {
-                                      orderDescription = 'Item';
-                                    }
-                                    paypal.Buttons({
-                                      style: {
-                                        shape: 'rect',
-                                        color: 'silver',
-                                        layout: 'vertical',
-                                        label: 'pay',
-                                        
-                                      },
-                                      createOrder: function(data, actions) {
-                                        var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
-                                        var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
-                                        var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
-                                        if(quantitySelect.options.length > 0) {
-                                          quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
-                                        } else {
-                                          quantity = 1;
+                                        <script src="https://www.paypal.com/sdk/js?client-id=AZnW-TjqM78MW5L56d2HOZPMTMDBQllsYCw0v_tsUs9v0EPg2X9ZMd-XYyUFkVzlUGqqe6HejQwcf1Xi&currency=USD" data-sdk-integration-source="button-factory"></script>
+                                        <script>
+                                          function initPayPalButton() {
+                                            var shipping = 0;
+                                            var itemOptions = document.querySelector("#smart-button-container #item-options");
+                                        var quantity = parseInt();
+                                        var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+                                        if (!isNaN(quantity)) {
+                                          quantitySelect.style.visibility = "visible";
                                         }
+                                        var orderDescription = '';
+                                        if(orderDescription === '') {
+                                          orderDescription = 'Item';
+                                        }
+                                        paypal.Buttons({
+                                          style: {
+                                            shape: 'rect',
+                                            color: 'silver',
+                                            layout: 'vertical',
+                                            label: 'paypal',
+                                            
+                                          },
+                                          createOrder: function(data, actions) {
+                                            var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+                                            var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+                                            var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+                                            if(quantitySelect.options.length > 0) {
+                                              quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+                                            } else {
+                                              quantity = 1;
+                                            }
 
-                                        tax *= quantity;
-                                        tax = Math.round(tax * 100) / 100;
-                                        var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
-                                        priceTotal = Math.round(priceTotal * 100) / 100;
-                                        var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+                                            tax *= quantity;
+                                            tax = Math.round(tax * 100) / 100;
+                                            var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+                                            priceTotal = Math.round(priceTotal * 100) / 100;
+                                            var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
 
-                                        return actions.order.create({
-                                          purchase_units: [{
-                                            description: orderDescription,
-                                            amount: {
-                                              currency_code: 'USD',
-                                              value: priceTotal,
-                                              breakdown: {
-                                                item_total: {
+                                            return actions.order.create({
+                                              purchase_units: [{
+                                                description: orderDescription,
+                                                amount: {
                                                   currency_code: 'USD',
-                                                  value: itemTotalValue,
+                                                  value: priceTotal,
+                                                  breakdown: {
+                                                    item_total: {
+                                                      currency_code: 'USD',
+                                                      value: itemTotalValue,
+                                                    },
+                                                    shipping: {
+                                                      currency_code: 'USD',
+                                                      value: shipping,
+                                                    },
+                                                    tax_total: {
+                                                      currency_code: 'USD',
+                                                      value: tax,
+                                                    }
+                                                  }
                                                 },
-                                                shipping: {
-                                                  currency_code: 'USD',
-                                                  value: shipping,
-                                                },
-                                                tax_total: {
-                                                  currency_code: 'USD',
-                                                  value: tax,
-                                                }
-                                              }
-                                            },
-                                            items: [{
-                                              name: selectedItemDescription,
-                                              unit_amount: {
-                                                currency_code: 'USD',
-                                                value: selectedItemPrice,
-                                              },
-                                              quantity: quantity
-                                            }]
-                                          }]
-                                        });
-                                      },
-                                      onApprove: function(data, actions) {
-                                        return actions.order.capture().then(function(orderData) {
-                                          
-                                          // Full available details
-                                          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                                                items: [{
+                                                  name: selectedItemDescription,
+                                                  unit_amount: {
+                                                    currency_code: 'USD',
+                                                    value: selectedItemPrice,
+                                                  },
+                                                  quantity: quantity
+                                                }]
+                                              }]
+                                            });
+                                          },
+                                          onApprove: function(data, actions) {
+                                            return actions.order.capture().then(function(orderData) {
+                                              
+                                              // Full available details
+                                              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
 
-                                          // Show a success message within this page, e.g.
-                                          const element = document.getElementById('paypal-button-container');
-                                          element.innerHTML = '';
-                                          element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                                              // Show a success message within this page, e.g.
+                                              const element = document.getElementById('paypal-button-container');
+                                              element.innerHTML = '';
+                                              element.innerHTML = '<h3>Thank you for your payment!</h3>';
 
-                                          // Or go to another URL:  actions.redirect('thank_you.html');
+                                              // Or go to another URL:  actions.redirect('thank_you.html');
 
-                                        });
-                                      },
-                                      onError: function(err) {
-                                        console.log(err);
-                                      },
-                                    }).render('#paypal-button-container');
-                                  }
-                                  initPayPalButton();
-                                    </script>
+                                            });
+                                          },
+                                          onError: function(err) {
+                                            console.log(err);
+                                          },
+                                        }).render('#paypal-button-container');
+                                      }
+                                      initPayPalButton();
+                                        </script>
 
                             </div>
                             <!-- Paypal End -->
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
             <div class="spacing"></div>
