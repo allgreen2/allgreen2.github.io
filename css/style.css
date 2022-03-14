@@ -707,7 +707,12 @@ a:focus {
     font-weight: bold;
     width: 100%;
     min-width: 300px;
-    border: none;
+    border: 3px solid #D0D0D0;
+    border-radius: 5px;
+}
+
+.payment-selector .select{
+
 }
 
 .payment-container {
