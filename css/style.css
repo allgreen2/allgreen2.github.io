@@ -206,7 +206,7 @@ a:focus {
 .nav-bar .btn {
     color: #ffffff;
     border: 2px solid #ffffff;
-    border-radius: 0;
+    border-radius: 5px;
     font-size: 14px;
 }
 
@@ -331,7 +331,7 @@ a:focus {
     color: #ffffff;
     background: transparent;
     border: 2px solid #ffffff;
-    border-radius: 0;
+    border-radius: 5px;
     transition: .3s;
 }
 
@@ -651,7 +651,7 @@ a:focus {
     font-weight: 500;
     letter-spacing: 1px;
     color: #789bb3;
-    border-radius: 0;
+    border-radius: 5px;
     background: #030f27;
     transition: .3s;
 }
@@ -691,7 +691,7 @@ a:focus {
     font-weight: 500;
     letter-spacing: 1px;
     color: #789bb3;
-    border-radius: 0;
+    border-radius: 5px;
     background: #030f27;
     transition: .3s;
 }
@@ -870,7 +870,7 @@ a:focus {
     font-weight: 100;
     color: #030f27;
     background: #789bb3;
-    border-radius: 0;
+    border-radius: 5px;
     transition: .3s;
 }
 
@@ -1184,6 +1184,7 @@ a:focus {
     line-height: 40px;
     border: 1px solid rgba(0, 0, 0, .1);
     transition: .5s;
+    border-radius: 5px;
 }
 
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"] {
@@ -1216,6 +1217,7 @@ a:focus {
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, .1);
     border-top: none;
+    border-radius: 5px;
 }
 
 
@@ -1371,7 +1373,7 @@ a:focus {
     font-weight: 100;
     color: #030f27;
     background: #789bb3;
-    border-radius: 0;
+    border-radius: 5px;
     transition: .3s;
 }
 
@@ -1653,7 +1655,7 @@ a:focus {
     font-size: 14px;
     color: #030f27;
     background: #dddddd;
-    border-radius: 0;
+    border-radius: 5px;
 }
 
 .single .comment-text .btn:hover {
@@ -1756,7 +1758,7 @@ a:focus {
     font-size: 25px;
     color: #789bb3;
     background: none;
-    border-radius: 0;
+    border-radius: 5px;
     border: none;
     transition: .3s;
 }
@@ -2124,7 +2126,7 @@ a:focus {
     color: #789bb3;
     background: #030f27;
     border: none;
-    border-radius: 0;
+    border-radius: 5px;
     transition: .3s;
 }
 
