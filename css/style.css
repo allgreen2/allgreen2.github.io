@@ -2361,14 +2361,10 @@ a:focus {
 /*-- GENERAL STYLES
 ------------------------------*/
 .timeline {
-  line-height: 1.4em;
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
-}
-.timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
-  line-height: inherit;
 }
 
 .timeline-item h3 {
