@@ -2325,6 +2325,11 @@ a:focus {
     text-decoration: none;
 }
 
+.footer .copyright .col-md-6 label p {
+    font-size: 8px;
+    color: #999999;
+}
+
 .footer .copyright .col-md-6 label a {
     font-size: 8px;
     color: #292f36;
