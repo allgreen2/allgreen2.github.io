@@ -2408,6 +2408,14 @@ a:focus {
   white-space: nowrap;
 }
 
+.past {
+    color: #d5d5d5;
+}
+
+.past h3 {
+    color: #d5d5d5;
+}
+
 /*----- TIMELINE MARKER -----*/
 .timeline-marker {
   position: absolute;
@@ -2416,8 +2424,13 @@ a:focus {
   left: 0;
   width: 15px;
 }
+
+:root {
+    --color: #789bb3;
+}
+
 .timeline-marker:before {
-  background: #789bb3;
+  background: var(--color);
   border: 3px solid transparent;
   border-radius: 100%;
   content: "";
@@ -2445,7 +2458,7 @@ a:focus {
 
 .timeline-item:not(.period):hover .timeline-marker:before {
   background: transparent;
-  border: 3px solid #789bb3;
+  border: 3px solid var(--color);
 }
 
 /*----- TIMELINE CONTENT -----*/

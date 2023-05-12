@@ -132,6 +132,22 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    // Fade Past Dates
+    $('.timeline-item .timeline-info').each(function()
+    {
+        var stringA = $(this).text().replace(/(\s[0-9]+\s\-)/, '');
+        var date_string = stringA.replace(/([A-Z][a-z]+\s)([A-Z])/, '$2');
+        var date = new Date(date_string);
+        var now_date = new Date().getTime();
+
+        if (date < now_date){
+            $(this).addClass('past');
+            $(this).parent('li').addClass('past');
+            $(this).parent('li')[0].childNodes[3].style.setProperty('--color', "#d5d5d5")
+        }
+    }
+    );
     
 })(jQuery);
 
