@@ -701,6 +701,43 @@ a:focus {
     background: #789bb3;
 }
 
+/*----------------------------------------------
+    Training Schedule Boxes
+----------------------------------------------*/
+/*
+.container-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-1 {
+    flex: 1;
+    height: 100px;
+    color: #666666;
+    background-color: #dddddd;
+}
+
+.box-2 {
+    flex: 1;
+    height: 100px;
+    color: #030f27;
+    background-color: #789bb3;
+}
+
+.box-3 {
+    flex: 1;
+    height: 100px;
+    color: #666666;
+    background-color: #dddddd;
+}
+
+/*
+@media (min-width: 992px) {
+    .box-container {
+        height: 500px;
+    }
+}
+*/
 
 .payment-selector {
     font-size: 16px;
