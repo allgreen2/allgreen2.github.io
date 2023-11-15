@@ -683,18 +683,18 @@ a:focus {
 }
 
 .admissions-steps a.btn {
-    position: relative;
-    margin-top: 15px;
-    padding: 15px 35px;
-    min-width: 250px;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #789bb3;
-    border-radius: 5px;
-    background: #030f27;
-    transition: .3s;
-}
+        position: relative;
+        margin-top: 15px;
+        padding: 15px 35px;
+        min-width: 250px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        border-radius: 5px;
+        background: #030f27;
+        transition: .3s;
+ }
 
 .admissions-steps a.btn:hover {
     color: #030f27;
