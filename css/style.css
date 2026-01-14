@@ -217,6 +217,12 @@ a:focus {
     border-color: #789bb3;
 }
 
+.navbar-brand {
+    margin: auto;
+    font-size: 18px;
+    padding-top: 12px;
+}
+
 @media (min-width: 992px) {
     .nav-bar {
         padding: 0;
