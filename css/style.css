@@ -204,10 +204,11 @@ a:focus {
 }
 
 .nav-bar .btn {
-    color: #ffffff;
+    color: #800020;
     border: 2px solid #ffffff;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
+    background: #ffffff;
 }
 
 .nav-bar .btn:hover {
@@ -252,9 +253,9 @@ a:focus {
     .nav-bar .dropdown-menu {
         box-shadow: none;
     }
-    
+
     .nav-bar .btn {
-        display: none;
+        font-size: 12px;
     }
 }
 
