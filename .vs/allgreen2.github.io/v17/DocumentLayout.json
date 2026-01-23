@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\wdcas\\OneDrive\\Desktop\\GitHub\\allgreen2.github.io\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\wdcas\\OneDrive\\Desktop\\GitHub\\allgreen2.github.io\\annarbor3.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:annarbor3.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 266,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -28,11 +32,30 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\wdcas\\OneDrive\\Desktop\\GitHub\\allgreen2.github.io\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AQIAAOUBAAAAAAAAAAAAAO0BAAA5AAAA",
+              "ViewState": "AQIAAGEBAAAAAAAAAAAAAHkBAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-01-14T23:02:03.278Z",
               "EditorCaption": ""
             },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "annarbor3.html",
+              "DocumentMoniker": "C:\\Users\\wdcas\\OneDrive\\Desktop\\GitHub\\allgreen2.github.io\\annarbor3.html",
+              "RelativeDocumentMoniker": "annarbor3.html",
+              "ToolTip": "C:\\Users\\wdcas\\OneDrive\\Desktop\\GitHub\\allgreen2.github.io\\annarbor3.html",
+              "RelativeToolTip": "annarbor3.html",
+              "ViewState": "AQIAANACAAAAAAAAAAAAAOgCAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-23T19:53:51.396Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 134,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -41,7 +64,7 @@
               "RelativeDocumentMoniker": "css\\style.css",
               "ToolTip": "C:\\Users\\wdcas\\OneDrive\\Desktop\\GitHub\\allgreen2.github.io\\css\\style.css",
               "RelativeToolTip": "css\\style.css",
-              "ViewState": "AQIAAMkAAAAAAAAAAAApwM8AAAAeAAAA",
+              "ViewState": "AQIAAFMCAAAAAAAAAAAAAGACAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-01-14T22:57:36.529Z",
               "EditorCaption": ""
