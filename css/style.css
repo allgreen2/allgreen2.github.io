@@ -2663,12 +2663,14 @@ a:focus {
   background: #FF6B6B;
 }
 
-.emphasized-link {
-  font-weight: bold;
-  text-decoration: underline;
+/*----------------------------------------------
+    LEEANN CUSTOM CSS
+----------------------------------------------*/
+
+/* make all links show hand icon when hovered */
+a {
   z-index: 9999;
 }
-
-.emphasized-link:hover {
+a:hover {
   cursor: pointer;
 }
