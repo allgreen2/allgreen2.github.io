@@ -172,7 +172,6 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 3000px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     z-index: 999;
 }
@@ -204,6 +203,8 @@ a:focus {
 }
 
 .nav-bar .btn {
+    margin-left: 15px;
+    margin-top: 3px;
     color: #800020;
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -222,6 +223,7 @@ a:focus {
     font-size: 18px;
     padding-top: 12px;
 }
+
 
 @media (min-width: 992px) {
     .nav-bar {
@@ -244,6 +246,13 @@ a:focus {
         padding: 8px 15px;
         font-size: 18px;
         text-transform: uppercase;
+        
+    }
+
+    .nav-bar .btn
+    {
+        position: fixed;
+        right: 15px;
     }
 }
 
@@ -263,8 +272,24 @@ a:focus {
     .nav-bar .btn {
         font-size: 11px;
     }
-}
 
+    .collapse-new
+    {
+        flex-basis: 100%;
+
+        flex-grow: 1;
+
+        align-items: center;
+
+        padding-right: 15px;
+        padding-left: 15px;
+        overflow-x: visible;
+        -webkit-overflow-scrolling: touch;
+        border-top: 1px solid transparent;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    }
+}
 
 /*******************************/
 /******** Carousel CSS *********/
@@ -707,6 +732,7 @@ a:focus {
     background: #030f27;
     transition: .3s;
 }
+
 
 
     .admissions-steps a.btn:hover {
