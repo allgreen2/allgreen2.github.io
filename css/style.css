@@ -161,7 +161,6 @@ a:focus {
 .nav-bar {
     position: relative;
     background: #789bb3;
-    transition: .3s;
 }
 
 .nav-bar .container-fluid {
@@ -173,7 +172,7 @@ a:focus {
     top: 0;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-    z-index: 999;
+    z-index: 99999;
 }
 
 .nav-bar .navbar {
@@ -223,6 +222,7 @@ a:focus {
     font-size: 18px;
     padding-top: 12px;
 }
+
 
 
 @media (min-width: 992px) {
@@ -1206,6 +1206,16 @@ a:focus {
     padding-left: 15px;
 }
 
+.faqs #accordion-3 {
+    padding-left: 15px;
+}
+
+@media(min-width: 768px) {
+    .faqs #accordion-3 {
+        display: none;
+    } 
+}
+
 @media(max-width: 767.98px) {
     .faqs .row::after {
         display: none;
@@ -1213,7 +1223,7 @@ a:focus {
     
     .faqs #accordion-1,
     .faqs #accordion-2 {
-        padding: 0;
+        display: none;
     }
     
     .faqs #accordion-2 {
