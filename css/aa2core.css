@@ -2616,3 +2616,19 @@ a:focus {
   background: #FF6B6B;
 }
 
+.teaser-video {
+    width: 40vw;
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+.teaser-video video {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .teaser-video {
+        width: 100%;
+    }
+}
