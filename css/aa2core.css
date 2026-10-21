@@ -210,11 +210,15 @@ a:focus {
     font-size: 14px;
 }
 
-    .nav-bar .btn:hover {
-        color: #030f27;
-        background: #789bb3;
-        border-color: #789bb3;
-    }
+.nav-bar .btn:hover {
+    color: #030f27;
+    background: #789bb3;
+    border-color: #789bb3;
+}
+
+.navbar-brand {
+    padding-top: 12px;
+}
 
 @media (min-width: 992px) {
     .nav-bar {
